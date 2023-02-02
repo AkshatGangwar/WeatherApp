@@ -28,7 +28,7 @@ namespace WeatherApp
             }
             catch (Exception)
             {
-                throw;
+                throw new NullReferenceException(message: "City Not Found!");
             }
         }
 
@@ -48,7 +48,7 @@ namespace WeatherApp
             }
             catch (Exception)
             {
-                throw;
+                throw new NullReferenceException(message: "Details Not Found!");
             }
         }
     }
